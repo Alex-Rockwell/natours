@@ -4,14 +4,27 @@
   
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   @include clearfix;
 
   [class^="col-"] {
     float: left;
+
     &:not(:last-child) {
       margin-right: $gutter-horisontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
