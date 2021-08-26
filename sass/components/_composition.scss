@@ -5,10 +5,10 @@
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
+    // outline-offset: 2rem;
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
-    outline-offset: 2rem;
 
     @include respond(tab-port) {
       float: left;
@@ -49,8 +49,8 @@
     }
 
     &:hover {
-      outline: solid 1.5rem $color-primary;
-      transform: scale(1.05) translateY(-0.5rem);
+      // outline: solid 1.5rem $color-primary;
+      transform: scale(1.2) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
     }
